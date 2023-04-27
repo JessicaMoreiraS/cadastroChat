@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+body{
+    background-color: rgb(201, 255, 255);
+}
+.inputInvisivel{
+    background-color: transparent;
+    border: none;
+}
+.inputInvisivel:focus, .mainConfgPerfil form input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.mainConfgPerfil form input:focus{
+    border-bottom: 2px solid #e17ccb;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 3rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+#container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px white;
+}
+#glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+}
+.circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+.circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+} 
+.circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+}
+.btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+} 
+.btn:hover {
+    transform: scale(1.1)
+}
+.btn:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+  .btn:active .circle {
+    background: #FE53BB;
+}
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+} 
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}  
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}  
+@keyframes animStar {
+    from {transform: translateY(0);}
+    to {transform: translateY(-135rem);}
+}
+@keyframes animStarRotate {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0);}
+}  
+@keyframes gradient_301 {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+  @keyframes pulse_3011 {
+    0% {transform: scale(0.75);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);}
+    70% {transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);}
+    100% {transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);}
+}
+
+.btnPequeno{
+    color: #F6F5F5;
+    font-weight: 100;
+    width: 125px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainConfgPerfil{
+    /*background-color: #212121; /*#070D59;*/
+    background-image: url('../imagens/2474215.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainConfgPerfil form{
+    background-color: #F6F5F5;
+    width: 50%;
+    min-width: 350px;
+    border-radius: 10px;
+}
+.mainConfgPerfil form #areImgPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+.mainConfgPerfil form #areImgPerfil img{
+    width: 90%;
+}
+.info1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.nomeUpStatus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.mainConfgPerfil form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    border: solid 2px #e17ccb;
+}
+.nomeUpStatus textarea{
+    background-color: transparent;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10%;
+}
+
+.mainConfgPerfil form #areImgPerfil .configFotoPerfil{
+    width: 200px;
+    border-radius: 100%;
+}
+
+.mainConfgPerfil form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #e17ccb;
+    font-size: 1.2em;
+    color: rgb(88, 88, 88);
+    text-align: center;
+    margin: 2%;
+    width: 50%;
+    min-width: 200px;
+}
+#upImgPerfil{
+    font-size: 0.8em;
+    width: 90%;
+}
+
+
+
+
+/*
+.color1 {color: #113459;}
+.color2 {color: #444579;}
+.color3 {color: #865da1;}
+.color4 {color: #e17ccb;}
+.color5 {color: #ffa5f0;}
+*/
+
+
+
+
+/*CHAT*/
+
+.mainChat{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 87vh;
+}
+.headerChat{
+    width: 100%;
+    height: 13vh;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Varela Round', sans-serif;
+}
+.headerChat .topo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.headerChat h3{
+    margin: 1%;
+}
+.headerChat input{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Varela Round', sans-serif;
+}
+.headerChat #areaImgPerfil{
+    width: 75px;
+    margin-right: 2%;
+}
+.headerChat #areaImgPerfil img{
+    width: 100%;
+    border-radius: 100%;
+}
+.headerChat nav{
+    background-color: rgb(226, 224, 225);
+    height: 3vh;
+    display: flex;
+    align-items: center;
+}
+.headerChat nav a{
+    text-decoration: none;
+    color: #212121;
+    margin-left: 2%;
+}
+#areaConectados{
+    width: 25%;
+    height: 87vh;
+    background-color: #b3bbbd;
+    border-right: solid 1.5px #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#areaConectados .cardConexao{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    background-color: #E7EFF1;
+    margin: 1%;
+    border: 2px solid #fff;
+}
+#areaConectados .cardConexao .cardAreaFoto{
+    width: 40%;
+    max-width: 80px;
+}
+#areaConectados .cardConexao .cardNomeEstatus{
+    padding: 2%;
+}
+#areaConectados .cardConexao .cardAreaFoto .configFotoPerfil{
+    width: 100%;
+    border-radius: 100%;
+}
+.areaChat{
+    width: 75%;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.areaMensagem{
+    background-image: url('../imagens/fundo4.jpg');
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 116px);
+    overflow: auto;
+    height: 75vh;
+}
+.balao{
+    background-color: rgb(207, 224, 180);
+    min-width: 100px;
+    max-width: 300px;
+    padding: 1%;
+    border-radius: 5px;
+    margin: 2%;
+}
+.nomeMensagem, .mensagem{
+    text-align: left;
+    padding: 2%;
+}
+
+.areaMinhaMensagem{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.areaMinhaMensagem div{
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.areaEscrever{
+    background-color: #212121;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.areaEscrever form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.areaEscrever #mensagem{
+    width: 95vh;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+.areaEscrever button{
+    font-size: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 2%;
+}
+.areaEscrever button:hover{
+    background-color: black;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 700;
+}
