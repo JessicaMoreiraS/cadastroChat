@@ -7,7 +7,8 @@
       "status": "frase bonita que não tenho paciencia para pesquisas",
       "telefone": "40028922",
       "foto": "<img src='https://cdna.artstation.com/p/assets/images/images/018/763/270/large/gabrielle-appell-original-eve-3.jpg?1560623685' class=\"configFotoPerfil\"/>",
-      "id": 987001
+      "id": 987001,
+      "conexao": false
     },
     {
       "nome": "Fulano",
@@ -16,7 +17,8 @@
       "status": "",
       "telefone": "",
       "foto": "<img src=\"../imagens/semFotoPerfil.jpg\" class=\"configFotoPerfil\"/>",
-      "id": 987002
+      "id": 987002,
+      "conexao": false
     },
     {
       "nome": "Jessica",
@@ -25,7 +27,8 @@
       "status": "",
       "telefone": "",
       "foto": "<img src=\"../imagens/semFotoPerfil.jpg\" class=\"configFotoPerfil\"/>",
-      "id": 987003
+      "id": 987003,
+      "conexao": false
     }
   ],
   "conectados":[
