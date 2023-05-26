@@ -8,7 +8,8 @@
       "telefone": "40028922",
       "foto": "<img src='https://cdna.artstation.com/p/assets/images/images/018/763/270/large/gabrielle-appell-original-eve-3.jpg?1560623685' class=\"configFotoPerfil\"/>",
       "id": 987001,
-      "conexao": false
+      "conexao": false,
+      "backup": ""
     },
     {
       "nome": "Fulano",
@@ -18,7 +19,8 @@
       "telefone": "",
       "foto": "<img src=\"../imagens/semFotoPerfil.jpg\" class=\"configFotoPerfil\"/>",
       "id": 987002,
-      "conexao": false
+      "conexao": false,
+      "backup": ""
     },
     {
       "nome": "Jessica",
@@ -28,7 +30,8 @@
       "telefone": "",
       "foto": "<img src=\"../imagens/semFotoPerfil.jpg\" class=\"configFotoPerfil\"/>",
       "id": 987003,
-      "conexao": false
+      "conexao": false,
+      "backup": ""
     }
   ],
   "conectados":[
